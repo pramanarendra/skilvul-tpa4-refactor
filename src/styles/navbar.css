@@ -1,0 +1,76 @@
+nav {
+    overflow: hidden;
+    background-color: var(--putih);
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+}
+
+.hamburger {
+    height: 20vh;
+    background-color: var(--putih);
+    cursor: pointer;
+    margin: auto;
+    width: 64px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    transition: all ease-in 0.2s;
+}
+
+.hamburger .line {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #222;
+    transition: all ease-in 0.2s;
+}
+
+.hamburger.active {
+    gap: 0;
+    padding: 16px;
+}
+
+.hamburger.active .line:nth-child(1) {
+    border-bottom: 1px solid var(--hitam);
+    transform: rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2) {
+    border-bottom: 1px solid var(--hitam);
+    transform: rotate(-45deg);
+}
+
+.nav-menu {
+    padding-top: 64px;
+    height: 85vh;
+    background-color: var(--hitam);
+}
+
+.nav-menu.hidden {
+    display: none;
+    transition: display ease-in 0.5s;
+}
+
+.nav-menu ul {
+    font-family: "Emberly";
+    font-size: 5rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+}
+
+.nav-menu ul li {
+    text-transform: uppercase;
+    color: var(--putih);
+    transition: all ease-in 0.1s;
+
+}
+
+.nav-menu ul li:hover {
+    color: #B73C12;
+}

@@ -1,0 +1,48 @@
+/*===== Import Font =====*/
+
+@font-face {
+  font-family: 'Emberly';
+  src: url('./font/Emberly-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Emberly';
+  src: url('./font/Emberly-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/*===== HTML Reset & Default Style =====*/
+
+html {
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+  background-color: #C4BDB3;
+  color: #1B1B19;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+:root {
+  --hitam: #222;
+  --putih: #C4BDB3;
+  --merah: #B73C12;
+}
