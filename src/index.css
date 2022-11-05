@@ -2,14 +2,14 @@
 
 @font-face {
   font-family: 'Emberly';
-  src: url('./font/Emberly-Bold.ttf') format('truetype');
+  src: url('../src/assets/font/Emberly-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Emberly';
-  src: url('./font/Emberly-Black.ttf') format('truetype');
+  src: url('../src/assets/font/Emberly-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }

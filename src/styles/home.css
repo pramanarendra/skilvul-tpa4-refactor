@@ -147,10 +147,15 @@
 @media only screen and (min-width: 1024px) {
     #home {
         flex-direction: row;
-        gap: 240px;
+        gap: 132px;
         overflow: hidden;
         align-items: center;
         justify-content: center;
+    }
+
+    .hero-desc {
+        width: 430px;
+        align-items: flex-start;
     }
 
     .hero-img {

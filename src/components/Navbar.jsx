@@ -21,10 +21,10 @@ const Navbar = () => {
 
                 <div className={nav ? "nav-menu hidden" : "nav-menu"}>
                     <ul>
-                        <li><Link>Home</Link></li>
-                        <li><Link>About</Link></li>
-                        <li><Link>Projects</Link></li>
-                        <li><Link>Articles</Link></li>
+                        <li><Link to={'/'} onClick={toggleNav}>Home</Link></li>
+                        <li><Link to={'/about'} onClick={toggleNav}>About</Link></li>
+                        <li><Link to={'/projects'} onClick={toggleNav}>Projects</Link></li>
+                        <li><Link to={'/articles'} onClick={toggleNav}>Articles</Link></li>
                     </ul>
                 </div>
             </nav>
