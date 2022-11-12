@@ -1,18 +1,25 @@
 nav {
+    position: sticky;
+    top: 0;
+}
+
+.toggle {
     overflow: hidden;
     background-color: var(--putih);
     border-bottom: 1px solid black;
     position: sticky;
     top: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
 }
 
 .hamburger {
-    height: 20vh;
     background-color: var(--putih);
     cursor: pointer;
     margin: auto;
     width: 64px;
-    height: 48px;
+    height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +36,6 @@ nav {
 
 .hamburger.active {
     gap: 0;
-    padding: 16px;
 }
 
 .hamburger.active .line:nth-child(1) {
@@ -43,9 +49,16 @@ nav {
 }
 
 .nav-menu {
-    padding-top: 64px;
-    height: 85vh;
+    /* padding-top: 64px; */
     background-color: var(--hitam);
+    position: fixed;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-menu.hidden {

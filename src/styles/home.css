@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 48px;
+    padding-top: 32px;
 }
 
 .hero-img img {
@@ -71,14 +71,15 @@
     color: var(--merah);
 }
 
-#projects,
+/* #projects,
 #articles {
     margin: 64px auto;
     display: grid;
-    padding: 32px 16px;
-    gap: 48px;
+    padding: 0px 32px 32px 16px;
+    gap: 32px;
     width: 320px;
     border-bottom: 1px solid var(--hitam);
+    cursor: pointer;
 }
 
 #projects h2,
@@ -102,14 +103,19 @@
     font-size: 2rem;
 }
 
-.project-img img,
-.article-img img {
+.project-img,
+.article-img {
+    object-fit: cover;
     width: 320px;
     height: 132px;
     background-color: gray;
     border: 1px solid var(--hitam);
-    margin-bottom: 8px;
 }
+
+.project-img img,
+.article-img img {
+    width: 100%;
+} */
 
 @media only screen and (min-width: 768px) {
     .hero-img img {

@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../assets/hero-img.png'
 import '../styles/home.css'
 import { Link } from 'react-router-dom'
+import Projects from './Projects'
 
 const Home = () => {
     return (
@@ -21,52 +22,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section id='projects'>
-                <div>
-                    <h2>Latest Work</h2>
-                    <p>Here are some of my selected works over the past year</p>
-                </div>
-
-                <Link to={""}>
-                    <div className='project-img'>
-                        <img src="" alt="" />
-                    </div>
-                    <h3>Indonesian's Hogwarts</h3>
-                    <p>Photoshoots of the magical Plaosan Temple located in Yogyakarta.</p>
-                </Link>
-
-                <Link>
-                    <div className='project-img'>
-                        <img src="" alt="" />
-                    </div>
-                    <h3>Cirebon Mask Dance</h3>
-                    <p>Illustration set of five dancer of the iconic Cirebon masks.</p>
-                </Link>
-
-                <Link>
-                    <div className='project-img'>
-                        <img src="" alt="" />
-                    </div>
-                    <h3>The Raging Storm</h3>
-                    <p>Short comics about journey of losing and finding the inner self.</p>
-                </Link>
-
-                <Link>
-                    <div className='project-img'>
-                        <img src="" alt="" />
-                    </div>
-                    <h3>Coming Soon</h3>
-                    <p>A projects about books with a bunch of self discovery illustrations.</p>
-                </Link>
-
-                <Link>
-                    <div className='project-img'>
-                        <img src="" alt="" />
-                    </div>
-                    <h3>Coming Soon</h3>
-                    <p>E-commerce website that sells handcraft accesories and jewelries.</p>
-                </Link>
-            </section>
+            <Projects />
             <section id='articles'>
                 <div>
                     <h2>My Thoughts</h2>
