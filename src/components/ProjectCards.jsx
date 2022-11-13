@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import PropTypes from 'prop-types';
 import '../styles/project-card.css'
 
 const ProjectCards = (props) => {
@@ -17,6 +18,16 @@ const ProjectCards = (props) => {
             <p>{props.value.short}</p>
         </div>
     )
+}
+
+ProjectCards.propTypes = {
+    value: PropTypes.exact({
+        id: PropTypes.number,
+        img: PropTypes.string,
+        long: PropTypes.string,
+        short: PropTypes.string,
+        title: PropTypes.string
+    }).isRequired
 }
 
 export default ProjectCards
