@@ -1,0 +1,65 @@
+#about {
+    padding: 64px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-header img {
+    width: 320px;
+    margin: 0;
+    padding: 0;
+}
+
+.about-header h2 {
+    font-family: "Emberly", serif;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 32px;
+    font-weight: 800;
+}
+
+.about-desc p:nth-child(2),
+.about-desc p:nth-child(3) {
+    text-indent: 32px;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+.about-skills,
+.about-coding,
+.about-design {
+    margin-top: 16px;
+    width: 100%;
+}
+
+.about-skills p,
+.about-coding p,
+.about-design p {
+    font-family: "Emberly", serif;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.about-skills ul li,
+.about-coding ul li,
+.about-design ul li {
+    border: 1px solid var(--hitam);
+    padding: 8px 16px;
+    margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 1024px) {
+    #about {
+        width: 720px;
+        margin: auto;
+    }
+}

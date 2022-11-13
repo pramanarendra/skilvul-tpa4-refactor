@@ -19,7 +19,9 @@ const Home = () => {
                     </div>
                     <p>Creation</p>
                     <p>A good project is made of some careful steps. I think, create, and deliver visual projects for every needs</p>
-                    <button>About Me</button>
+                    <button>
+                        <Link to='/about'>About Me</Link>
+                    </button>
                 </div>
             </section>
 
