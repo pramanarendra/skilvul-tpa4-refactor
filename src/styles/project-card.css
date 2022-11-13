@@ -1,5 +1,4 @@
-#projects,
-#articles {
+#projects {
     margin: 64px auto;
     display: grid;
     padding: 0px 32px 32px 16px;
@@ -9,39 +8,41 @@
     cursor: pointer;
 }
 
-#projects h2,
-#articles h2 {
+#projects h2 {
     text-transform: uppercase;
     font-family: "Emberly";
     font-weight: 900;
     font-size: 3rem;
 }
 
-#projects>div:nth-child(1)>p,
-#articles>div:nth-child(1)>p {
+#projects>div:nth-child(1)>p {
     font-size: 1.5rem;
 }
 
-#projects h3,
-#articles h3 {
+#projects h3 {
     text-transform: uppercase;
     font-family: "Emberly";
     font-weight: 900;
     font-size: 2rem;
 }
 
-.project-img,
-.article-img {
+.project-img {
     object-fit: cover;
     width: 320px;
     height: 132px;
     background-color: gray;
     border: 1px solid var(--hitam);
+    margin-bottom: 8px;
 }
 
-.project-img img,
-.article-img img {
+.project-img img {
     width: 100%;
+    filter: grayscale(1);
+    transition: all ease-in 0.2s;
+}
+
+.project-img img:hover {
+    filter: grayscale(0);
 }
 
 @media only screen and (min-width: 1024px) {
@@ -62,15 +63,13 @@
         order: 2;
     }
 
-    #projects,
-    #articles {
+    #projects {
         margin: 64px auto;
         grid-template-columns: repeat(3, 323px);
         min-width: fit-content;
     }
 
-    #projects>div,
-    #articles>div {
+    #projects>div {
         width: 322px;
     }
 }

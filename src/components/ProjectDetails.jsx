@@ -47,9 +47,9 @@ const ProjectDetails = () => {
 
     return (
         <section className='project-details'>
-            {projects.filter((project) => project.id === +id).map((project) => {
+            {projects.filter((project) => project.id === +id).map((project, index) => {
                 return (
-                    <>
+                    <div key={index}>
                         <Link to="/projects" className='back'>
                             <img src={BackIcon} alt="" />
                             <p>See Others</p>
@@ -58,7 +58,7 @@ const ProjectDetails = () => {
                         <p className='project-short'>{project.short}</p>
                         <img src={project.img} alt="" className='project-img' />
                         <p className='project-long'>{project.long}</p>
-                    </>
+                    </div>
                 )
             })}
         </section>

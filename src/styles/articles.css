@@ -1,0 +1,45 @@
+#articles {
+    width: 320px;
+    padding: 0px 32px 16px;
+    margin: 64px auto;
+}
+
+#articles h2 {
+    text-transform: uppercase;
+    font-family: "Emberly";
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.article-card {
+    padding: 16px;
+    border: 1px solid var(--hitam);
+    margin: 16px 0;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+}
+
+.article-card:hover {
+    background-color: var(--hitam);
+    color: var(--merah);
+}
+
+.article-card h3 {
+    font-family: "Emberly", serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.article-info {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+@media only screen and (min-width: 1024px) {
+    #articles {
+        width: 720px;
+    }
+}

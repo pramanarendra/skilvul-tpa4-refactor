@@ -29,9 +29,10 @@
     text-align: center;
 }
 
-.project-img {
+img.project-img {
+    width: 100%;
+    height: auto;
     background-color: grey;
-    width: 100vw;
     object-fit: cover;
     margin-bottom: 32px;
 }
@@ -47,11 +48,6 @@
     .project-details {
         margin: auto;
         max-width: 720px;
-    }
-
-    img.project-img {
-        width: 100%;
-        height: auto;
     }
 
     .project-long {

@@ -168,7 +168,7 @@
         order: 2;
     }
 
-    #projects,
+    /* #projects,
     #articles {
         margin: 64px auto;
         grid-template-columns: repeat(3, 323px);
@@ -178,5 +178,5 @@
     #projects>div,
     #articles>div {
         width: 322px;
-    }
+    } */
 }
