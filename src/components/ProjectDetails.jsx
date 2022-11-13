@@ -5,6 +5,7 @@ import BackIcon from '../assets/back-icon.svg'
 
 const ProjectDetails = () => {
 
+    /*===== Data Projects =====*/
     const projects = [
         {
             id: 1,
@@ -43,9 +44,11 @@ const ProjectDetails = () => {
         }
     ]
 
+    /*===== Ambil ID dari URL Parameter =====*/
     const { id } = useParams()
 
     return (
+        // Cari Project yang sesuai dengan ID pada URL Parameter
         <section className='project-details'>
             {projects.filter((project) => project.id === +id).map((project, index) => {
                 return (

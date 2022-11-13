@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import BackIcon from '../assets/back-icon.svg'
-import '../styles/article2-3.css'
+import '../styles/article.css'
 
 const Article3 = () => {
     return (
-        <div id="article1" className="article">
+        <div id="article3" className="article">
             <header>
                 <Link to='/articles' className="return">
                     <img src={BackIcon} alt="arrow icon" />

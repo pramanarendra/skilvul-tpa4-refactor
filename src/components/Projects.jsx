@@ -4,6 +4,7 @@ import Cards from './ProjectCards'
 
 const Projects = () => {
 
+    /*===== Data Projects =====*/
     const projects = [
         {
             id: 1,
@@ -42,6 +43,7 @@ const Projects = () => {
         }
     ]
 
+    /*===== Handle Navigate ke Project yang Dipilih =====*/
     const navigate = useNavigate();
     const handleDetails = (id) => {
         navigate(`projects/${id}`)
@@ -54,6 +56,7 @@ const Projects = () => {
                 <p>Here are some of my selected works over the past year</p>
             </div>
 
+            {/* Mapping Data Project */}
             {
                 projects.map((item, index) => (
                     <Cards value={item} key={index} onClick={() => handleDetails(item.id)} />

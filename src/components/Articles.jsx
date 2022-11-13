@@ -4,6 +4,7 @@ import '../styles/articles.css'
 
 const Articles = () => {
     return (
+        /*===== Article Cards =====*/
         <section id='articles'>
             <div>
                 <h2>My Thoughts</h2>

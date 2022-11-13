@@ -3,7 +3,7 @@
     width: 896px;
 }
 
-#article1 header {
+.article header {
     display: flex;
 }
 
@@ -29,16 +29,20 @@
     display: flex;
     margin-top: 16px;
     margin-bottom: 32px;
+    justify-content: flex-start;
 }
 
 .article .article-info p {
     margin-right: 32px;
     font-size: 1rem;
+    text-indent: 0;
 }
 
 .article p {
     margin-bottom: 16px;
     font-size: 1.25rem;
+    text-align: justify;
+    text-indent: 32px;
 }
 
 table {
@@ -65,7 +69,7 @@ td li {
     margin-bottom: 16px;
 }
 
-#article1 ul li {
+.article ul li {
     list-style-type: circle;
     font-size: 1.25rem;
     margin-left: 24px;
@@ -78,10 +82,6 @@ td li {
 
     .article header h1 {
         font-size: 2.5rem;
-    }
-
-    .article .article-info {
-        justify-content: flex-start;
     }
 
     .article p {
@@ -105,6 +105,14 @@ td li {
         font-size: 1rem;
         margin: 0;
         margin-bottom: 24px;
+    }
+
+    .article ul li {
+        font-size: 1rem;
+    }
+
+    #article2>section>article {
+        margin-bottom: 32px;
     }
 
 }

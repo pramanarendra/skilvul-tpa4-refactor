@@ -5,6 +5,7 @@ import '../styles/navbar.css'
 
 const Navbar = () => {
 
+    // Handle Toggle Navbar
     const [nav, setNav] = useState(true);
 
     const toggleNav = () => {

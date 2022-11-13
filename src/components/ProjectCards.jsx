@@ -4,11 +4,14 @@ import PropTypes from 'prop-types';
 import '../styles/project-card.css'
 
 const ProjectCards = (props) => {
+
+    /*===== Handle Navigate ke Project yang Dipilih =====*/
     const navigate = useNavigate();
     const handleDetails = (id) => {
         navigate(`/projects/${id}`)
     }
 
+    // Display Data dari Props
     return (
         <div className='project-container' onClick={() => handleDetails(props.value.id)}>
             <div className='project-img'>
